@@ -1,6 +1,7 @@
 <script>
     import * as Highcharts from "highcharts";
     import "highcharts/modules/exporting";
+    import "highcharts/modules/accessibility";
     import { Chart } from "@highcharts/svelte";
     import Scroller from "../lib/Scroller.svelte";
     import ArticleText from "../lib/ArticleText.svelte";

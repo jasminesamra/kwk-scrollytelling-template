@@ -8,10 +8,16 @@
   import DisappearingDuckExample from "./sections/DisappearingDuckExample.svelte";
   import IntersectionObserverSectionCard from "./sections/IntersectionObserverSectionCard.svelte";
   import IntersectionObserverListExample from "./sections/IntersectionObserverListExample.svelte";
+  import MapExample from "./sections/MapExample.svelte";
+  import EmbedMapExample from "./sections/EmbedMapExample.svelte";
+  import TypewriterTitleSection from "./sections/TypewriterTitleSection.svelte";
 </script>
 
 <main>
+  <TypewriterTitleSection/>
   <TitleSection />
+  <EmbedMapExample />
+  <!-- <MapExample /> -->
   <RightAlignedExample />
   <LeftAlignedExample />
   <ImageExample />

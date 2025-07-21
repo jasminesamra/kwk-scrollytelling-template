@@ -1,5 +1,5 @@
 <script>
-    import { fade, fly } from "svelte/transition";
+    import { fade, fly, scale } from "svelte/transition";
     import Scroller from "../lib/Scroller.svelte";
     import ObservedArticleText from "../lib/ObservedArticleText.svelte";
 
@@ -59,11 +59,26 @@
                         class="duck-img"
                         src="duck.png"
                         alt="KWK rubber duck!"
-                        in:fly={{ y: 200, duration: 2000 }}
-                        out:fade
+                        in:scale
+                        out:fade={{ duration: 2000 }}
+                    />
+                {:else}
+                <img
+                        class="kwk-img"
+                        src="kwk.png"
+                        alt="KWK rubber duck!"
+                        in:scale
+                        out:fade={{ duration: 2000 }}
                     />
                 {/if}
                 <br />
+                     <img
+                        class="kwk-img"
+                        src="kwk.png"
+                        alt="KWK rubber duck!"
+                        in:scale
+                        out:fade={{ duration: 2000 }}
+                    />
             </div>
         {/snippet}
 
@@ -132,5 +147,8 @@
 <style>
     .duck-img {
         margin: 0px auto;
+    }
+    .kwk-img {
+        width: 100px;
     }
 </style>
